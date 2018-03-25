@@ -1,6 +1,6 @@
 import { StackNavigator } from "react-navigation";
-import HomeContainer from "./screens/home/HomeContainer";
-import SettingsContainer from "./screens/settings/SettingsContainer";
+import HomeContainer from "../screens/home/HomeContainer";
+import SettingsContainer from "../screens/settings/SettingsContainer";
 
 const AppNavigator = StackNavigator({
   Home: {

@@ -3,6 +3,7 @@ import { createStore, applyMiddleware } from "redux";
 import RootReducer from './reducers/RootReducer';
 import { composeWithDevTools } from "redux-devtools-extension";
 import { createLogger } from "redux-logger";
+import Navigation from './middleware/Navigation';
 
 const ReduxLogger = createLogger({
   collapsed: true,
@@ -14,7 +15,7 @@ const ReduxLogger = createLogger({
 ////////////////////////////////////////
 
 const middleware = [
-
+  Navigation
 ];
 
 ////////////////////////////////////////

@@ -1,6 +1,6 @@
-export default (state = {}, action) => {
-  switch (action.type) {
-    default:
-      return state;
-  }
-};
+import { combineReducers } from 'redux';
+import Navigation from './Navigation';
+
+export default combineReducers({
+  nav: Navigation
+});
