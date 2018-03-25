@@ -7,13 +7,13 @@ import Reactotron, {
   networking
 } from "reactotron-react-native";
 
-Reactotron.configure({
-  name: Config.appName
-})
-  .use(trackGlobalErrors())
-  .use(openInEditor())
-  .use(overlay())
-  .use(asyncStorage())
-  .use(networking())
-  .useReactNative()
-  .connect();
+if (Config.enableReactotron) {
+  Reactotron.configure({ name: Config.appName })
+    .use(trackGlobalErrors())
+    .use(openInEditor())
+    .use(overlay())
+    .use(asyncStorage())
+    .use(networking())
+    .useReactNative()
+    .connect();
+}
