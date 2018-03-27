@@ -15,7 +15,7 @@ const ReduxLogger = createLogger({
 // Add all production middleware here //
 ////////////////////////////////////////
 
-const middleware = [
+let middleware = [
   Debounce,
   Navigation
 ];
