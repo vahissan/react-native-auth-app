@@ -1,7 +1,7 @@
 import Config from "../config/AppConfig";
 import { createStore, applyMiddleware } from "redux";
 import { persistStore, persistReducer } from 'redux-persist';
-import storage from 'redux-persist/lib/storage';
+import createSensitiveStorage from "redux-persist-sensitive-storage";
 import RootReducer from './reducers/RootReducer';
 import { composeWithDevTools } from "redux-devtools-extension";
 import { createLogger } from "redux-logger";
@@ -27,6 +27,11 @@ let middleware = [
 if (Config.debugRedux) {
   middleware = [ReduxLogger, ...middleware];
 }
+
+const storage = createSensitiveStorage({
+  keychainService: Config.iosKeychainService,
+  sharedPreferencesName: Config.sharedPreferencesName
+});
 
 const persistConfig = {
   key: 'root',
