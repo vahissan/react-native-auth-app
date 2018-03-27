@@ -1,4 +1,5 @@
 const pendingActions = {};
+const NAV_ACTION_DEBOUNCE = 290;
 
 const validateAndPassthrough = (action, key, debounce, next) => {
   if (pendingActions[key]) {
@@ -17,7 +18,7 @@ export default () => next => action => {
 
   if (action.type == 'Navigation/NAVIGATE') {
     const key = 'navigate/' + action.routeName;
-    validateAndPassthrough(action, key, 500, next);
+    validateAndPassthrough(action, key, NAV_ACTION_DEBOUNCE, next);
   } else {
     if (!debounce) {
       return next(action);
