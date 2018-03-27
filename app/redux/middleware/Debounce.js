@@ -2,15 +2,14 @@ const pendingActions = {};
 const NAV_ACTION_DEBOUNCE = 290;
 
 const validateAndPassthrough = (action, key, debounce, next) => {
-  if (pendingActions[key]) {
-    console.log('debounced', action.type, action);
-    clearTimeout(pendingActions[key]);
-  }
-
-  pendingActions[key] = setTimeout(() => {
-    delete pendingActions[key];
+  const now = (new Date()).getTime();
+  const diff = now - pendingActions[key];
+  if (pendingActions[key] && diff < 290) {
+    console.log('Debounced action ' + key + ' repeated in ' + diff + 'ms', action);
+  } else {
+    pendingActions[key] = now;
     next(action);
-  }, debounce);
+  }
 };
 
 export default () => next => action => {
