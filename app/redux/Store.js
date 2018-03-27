@@ -23,7 +23,7 @@ let middleware = [
 ////////////////////////////////////////
 
 if (Config.debugRedux) {
-  middleware = [...middleware, ReduxLogger];
+  middleware = [ReduxLogger, ...middleware];
 }
 
 const store = createStore(
