@@ -1,5 +1,7 @@
 import Config from "../config/AppConfig";
 import { createStore, applyMiddleware } from "redux";
+import { persistStore, persistReducer } from 'redux-persist';
+import storage from 'redux-persist/lib/storage';
 import RootReducer from './reducers/RootReducer';
 import { composeWithDevTools } from "redux-devtools-extension";
 import { createLogger } from "redux-logger";
@@ -26,10 +28,19 @@ if (Config.debugRedux) {
   middleware = [ReduxLogger, ...middleware];
 }
 
+const persistConfig = {
+  key: 'root',
+  storage,
+};
+
+const persistedReducer = persistReducer(persistConfig, RootReducer);
+
 const store = createStore(
-  RootReducer,
+  persistedReducer,
   composeWithDevTools(applyMiddleware(...middleware))
 );
+
+const persistor = persistStore(store);
 
 if (module.hot) {
   module.hot.accept(() => {
@@ -44,4 +55,4 @@ if (module.hot) {
   });
 }
 
-export default store;
+export { store, persistor };
