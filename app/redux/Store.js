@@ -49,7 +49,7 @@ const persistor = persistStore(store);
 
 if (module.hot) {
   module.hot.accept(() => {
-    const nextRootReducer = RootReducer;
+    const nextRootReducer = persistedReducer;
     store.replaceReducer(nextRootReducer);
 
     // const newYieldedSagas = require("../Sagas").default;
