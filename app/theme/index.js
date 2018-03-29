@@ -3,8 +3,9 @@ import { StyleSheet } from 'react-native';
 const colors = {
   primaryColor: '#6b52ae',
   secondaryColor: '#e0e0e0',
-  appBgColor: '#F5FCFF',
-  textColor: '#393939'
+  appBgColor: '#4F6D7A',
+  textColor: '#393939',
+  noColor: 'transparent'
 };
 
 const metrics = {
@@ -21,7 +22,7 @@ const fontSizes = {
 const styles = StyleSheet.create({
   appRoot: {
     flex: 1,
-    backgroundColor: 'transparent'
+    backgroundColor: colors.appBgColor
   },
   container: {
     flex: 1,
@@ -36,4 +37,4 @@ export default {
   metrics,
   fontSizes,
   styles
-}
+};
