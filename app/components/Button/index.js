@@ -13,6 +13,7 @@ export default class ButtonComponent extends PureComponent {
     return (
       <Button 
         {...this.props}
+        containerViewStyle={styles.button}
         buttonStyle={styles.button}
         backgroundColor={Theme.colors.primaryColor}
         raised={true}
