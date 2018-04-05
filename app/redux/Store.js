@@ -15,7 +15,8 @@ const reduxLogger = createLogger({
   diff: true
 });
 
-const sagaMiddleware = createSagaMiddleware();
+const sagaMonitor = Config.enableReactotron ? global.tron.createSagaMonitor() : null;
+const sagaMiddleware = createSagaMiddleware({ sagaMonitor });
 
 ////////////////////////////////////////
 // Add all production middleware here //
@@ -40,12 +41,13 @@ const storage = createSensitiveStorage({
 
 const persistConfig = {
   key: 'root',
-  storage,
+  storage
 };
 
 const persistedReducer = persistReducer(persistConfig, RootReducer);
 
-const store = createStore(
+const createAppropriateStore = Config.enableReactotron ? global.tron.createStore : createStore;
+const store = createAppropriateStore(
   persistedReducer,
   composeWithDevTools(applyMiddleware(...middleware))
 );

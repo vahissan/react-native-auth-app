@@ -1,19 +1,18 @@
 import Config from './AppConfig';
-import Reactotron, {
-  trackGlobalErrors,
-  openInEditor,
-  overlay,
-  asyncStorage,
-  networking
-} from "reactotron-react-native";
+import Reactotron from "reactotron-react-native";
+import { reactotronRedux } from 'reactotron-redux';
+import sagaPlugin from 'reactotron-redux-saga';
 
 if (Config.enableReactotron) {
   Reactotron.configure({ name: Config.appName })
-    .use(trackGlobalErrors())
-    .use(openInEditor())
-    .use(overlay())
-    .use(asyncStorage())
-    .use(networking())
     .useReactNative()
+    .use(reactotronRedux())
+    .use(sagaPlugin())
     .connect();
+
+  // Clear Reactotron history every time app loads
+  Reactotron.clear();
+
+  // Workaround to make Reactotron available in Store.js (and other files if needed)
+  global.tron = Reactotron;
 }
