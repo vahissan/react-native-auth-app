@@ -5,27 +5,32 @@ import createSensitiveStorage from "redux-persist-sensitive-storage";
 import RootReducer from './reducers/RootReducer';
 import { composeWithDevTools } from "redux-devtools-extension";
 import { createLogger } from "redux-logger";
-import Navigation from './middleware/Navigation';
-import Debounce from './middleware/Debounce';
+import createSagaMiddleware from 'redux-saga';
+import navigationMiddleware from './middleware/Navigation';
+import debounceMiddleware from './middleware/Debounce';
+import rootSaga from './sagas';
 
-const ReduxLogger = createLogger({
+const reduxLogger = createLogger({
   collapsed: true,
   diff: true
 });
+
+const sagaMiddleware = createSagaMiddleware();
 
 ////////////////////////////////////////
 // Add all production middleware here //
 ////////////////////////////////////////
 
 let middleware = [
-  Debounce,
-  Navigation
+  debounceMiddleware,
+  navigationMiddleware,
+  sagaMiddleware,
 ];
 
 ////////////////////////////////////////
 
 if (Config.debugRedux) {
-  middleware = [ReduxLogger, ...middleware];
+  middleware = [reduxLogger, ...middleware];
 }
 
 const storage = createSensitiveStorage({
@@ -45,6 +50,8 @@ const store = createStore(
   composeWithDevTools(applyMiddleware(...middleware))
 );
 
+let sagasManager = sagaMiddleware.run(rootSaga);
+
 const persistor = persistStore(store);
 
 if (module.hot) {
@@ -52,11 +59,11 @@ if (module.hot) {
     const nextRootReducer = persistedReducer;
     store.replaceReducer(nextRootReducer);
 
-    // const newYieldedSagas = require("../Sagas").default;
-    // sagasManager.cancel();
-    // sagasManager.done.then(() => {
-    //   sagasManager = sagaMiddleware.run(newYieldedSagas);
-    // });
+    const newYieldedSagas = require("./sagas").default;
+    sagasManager.cancel();
+    sagasManager.done.then(() => {
+      sagasManager = sagaMiddleware.run(newYieldedSagas);
+    });
   });
 }
 
