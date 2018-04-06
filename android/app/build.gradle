@@ -137,6 +137,9 @@ android {
 }
 
 dependencies {
+    compile(project(':react-native-firebase')) {
+        transitive = false
+    }
     compile project(':react-native-splash-screen')
     compile project(':react-native-sensitive-info')
     compile project(':react-native-vector-icons')

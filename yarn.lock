@@ -4718,6 +4718,14 @@ react-native-elements@^0.19.0:
     opencollective "^1.0.3"
     prop-types "^15.5.8"
 
+react-native-firebase@^3.3.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/react-native-firebase/-/react-native-firebase-3.3.1.tgz#b93cbb9b11f4f8a23a0d608567573b43a8c2de70"
+  dependencies:
+    opencollective "^1.0.3"
+    postinstall-build "^5.0.1"
+    prop-types "^15.6.1"
+
 react-native-safe-area-view@^0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/react-native-safe-area-view/-/react-native-safe-area-view-0.7.0.tgz#38f5ab9368d6ef9e5d18ab64212938af3ec39421"

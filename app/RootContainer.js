@@ -7,14 +7,24 @@ import { connect } from 'react-redux';
 import { addNavigationHelpers } from 'react-navigation';
 import { createReduxBoundAddListener } from 'react-navigation-redux-helpers';
 import SplashScreen from 'react-native-splash-screen';
+import { 
+  subscribeToLoginState, 
+  unsubscribeFromLoginState 
+} from './redux/actions/auth';
 
 const addListener = createReduxBoundAddListener("root");
 class RootContainer extends Component {
   componentDidMount() {
+    this.props.subscribeToLoginState();
     SplashScreen.hide();
   }
 
+  componentWillUnmount() {
+    this.props.unsubscribeFromLoginState();
+  }
+
   render() {
+    console.log('AUTH', this.props.auth);
     return (
       <View style={Theme.styles.appRoot}>
         <StatusBar />
@@ -29,7 +39,13 @@ class RootContainer extends Component {
 }
 
 const mapStateToProps = state => ({
-  nav: state.nav
+  nav: state.nav,
+  auth: state.auth
 });
 
-export default connect(mapStateToProps)(RootContainer);
+const mapDispatchToProps = dispatch => ({
+  subscribeToLoginState: () => dispatch(subscribeToLoginState()),
+  unsubscribeFromLoginState: () => dispatch(unsubscribeFromLoginState())
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(RootContainer);
