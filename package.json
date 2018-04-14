@@ -21,7 +21,8 @@
     "redux": "^3.7.2",
     "redux-persist": "^5.9.1",
     "redux-persist-sensitive-storage": "^1.0.0",
-    "redux-saga": "^0.16.0"
+    "redux-saga": "^0.16.0",
+    "reselect": "^3.0.1"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.2",

@@ -24,8 +24,8 @@ const sagaMiddleware = createSagaMiddleware({ sagaMonitor });
 
 let middleware = [
   debounceMiddleware,
-  navigationMiddleware,
   sagaMiddleware,
+  navigationMiddleware
 ];
 
 ////////////////////////////////////////
@@ -41,7 +41,8 @@ const storage = createSensitiveStorage({
 
 const persistConfig = {
   key: 'root',
-  storage
+  storage,
+  // blacklist: ['nav']
 };
 
 const persistedReducer = persistReducer(persistConfig, RootReducer);

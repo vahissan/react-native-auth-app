@@ -24,7 +24,6 @@ class RootContainer extends Component {
   }
 
   render() {
-    console.log('AUTH', this.props.auth);
     return (
       <View style={Theme.styles.appRoot}>
         <StatusBar />
@@ -39,11 +38,11 @@ class RootContainer extends Component {
 }
 
 const mapStateToProps = state => ({
-  nav: state.nav,
-  auth: state.auth
+  nav: state.nav
 });
 
 const mapDispatchToProps = dispatch => ({
+  dispatch: dispatch,
   subscribeToLoginState: () => dispatch(subscribeToLoginState()),
   unsubscribeFromLoginState: () => dispatch(unsubscribeFromLoginState())
 });

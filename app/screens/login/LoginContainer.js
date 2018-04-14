@@ -3,19 +3,19 @@ import { View, Text } from 'react-native';
 import { Button } from '../../components';
 import Theme from '../../theme';
 
-class HomeContainer extends Component {
-  goToSettings() {
-    this.props.navigation.navigate('Settings');
+class LoginContainer extends Component {
+  doLogin() {
+    this.props.navigation.navigate('LoggedIn');
   }
 
   render() {
     return (
       <View style={Theme.styles.container}>
-        <Text>Home Screen</Text>
-        <Button title="Go To Settings" onPress={() => this.goToSettings()}/>
+        <Text>Login Page</Text>
+        <Button title="Login" onPress={() => this.doLogin()} />
       </View>
     );
   }
 }
 
-export default HomeContainer;
+export default LoginContainer;

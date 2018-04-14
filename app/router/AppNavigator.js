@@ -1,8 +1,9 @@
-import { StackNavigator } from "react-navigation";
+import { StackNavigator, SwitchNavigator } from "react-navigation";
 import HomeContainer from "../screens/home/HomeContainer";
 import SettingsContainer from "../screens/settings/SettingsContainer";
+import LoginContainer from '../screens/login/LoginContainer';
 
-const AppNavigator = StackNavigator({
+const LoggedInNavigator = StackNavigator({
   Home: {
     screen: HomeContainer,
     navigationOptions: {
@@ -15,6 +16,22 @@ const AppNavigator = StackNavigator({
       title: "Settings"
     }
   }
+});
+
+const LoggedOutNavigator = StackNavigator({
+  Login: {
+    screen: LoginContainer,
+    navigationOptions: {
+      title: "Login"
+    }
+  }
+});
+
+const AppNavigator = SwitchNavigator({
+  LoggedOut: LoggedOutNavigator,
+  LoggedIn: LoggedInNavigator
+}, {
+  headerMode: 'none'
 });
 
 export default AppNavigator;
