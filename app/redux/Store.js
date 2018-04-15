@@ -42,7 +42,7 @@ const storage = createSensitiveStorage({
 const persistConfig = {
   key: 'root',
   storage,
-  // blacklist: ['nav']
+  blacklist: ['nav']
 };
 
 const persistedReducer = persistReducer(persistConfig, RootReducer);

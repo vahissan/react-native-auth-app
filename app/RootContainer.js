@@ -6,7 +6,6 @@ import Theme from './theme';
 import { connect } from 'react-redux';
 import { addNavigationHelpers } from 'react-navigation';
 import { createReduxBoundAddListener } from 'react-navigation-redux-helpers';
-import SplashScreen from 'react-native-splash-screen';
 import { 
   subscribeToLoginState, 
   unsubscribeFromLoginState 
@@ -16,7 +15,6 @@ const addListener = createReduxBoundAddListener("root");
 class RootContainer extends Component {
   componentDidMount() {
     this.props.subscribeToLoginState();
-    SplashScreen.hide();
   }
 
   componentWillUnmount() {

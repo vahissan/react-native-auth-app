@@ -2,6 +2,7 @@ import { StackNavigator, SwitchNavigator } from "react-navigation";
 import HomeContainer from "../screens/home/HomeContainer";
 import SettingsContainer from "../screens/settings/SettingsContainer";
 import LoginContainer from '../screens/login/LoginContainer';
+import AppLoadingContainer from "../screens/apploading/AppLoadingContainer";
 
 const LoggedInNavigator = StackNavigator({
   Home: {
@@ -28,6 +29,7 @@ const LoggedOutNavigator = StackNavigator({
 });
 
 const AppNavigator = SwitchNavigator({
+  AppLoading: AppLoadingContainer,
   LoggedOut: LoggedOutNavigator,
   LoggedIn: LoggedInNavigator
 }, {
