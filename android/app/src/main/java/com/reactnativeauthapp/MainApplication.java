@@ -3,7 +3,6 @@ package com.reactnativeauthapp;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
-import com.airbnb.android.react.lottie.LottiePackage;
 import io.invertase.firebase.RNFirebasePackage;
 import org.devio.rn.splashscreen.SplashScreenReactPackage;
 import br.com.classapp.RNSensitiveInfo.RNSensitiveInfoPackage;
@@ -29,7 +28,6 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
-            new LottiePackage(),
             new RNFirebasePackage(),
             new SplashScreenReactPackage(),
             new RNSensitiveInfoPackage(),
