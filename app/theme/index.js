@@ -5,6 +5,7 @@ const colors = {
   secondaryColor: '#e0e0e0',
   appBgColor: '#4F6D7A',
   textColor: '#393939',
+  altTextColor: '#ffffff',
   noColor: 'transparent'
 };
 
