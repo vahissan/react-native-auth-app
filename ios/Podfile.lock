@@ -29,6 +29,9 @@ PODS:
     - GoogleToolboxForMac/NSString+URLArguments (= 2.1.3)
   - GoogleToolboxForMac/NSString+URLArguments (2.1.3)
   - GTMSessionFetcher/Core (1.1.14)
+  - lottie-ios (2.5.0)
+  - lottie-react-native (2.5.0):
+    - lottie-ios
   - nanopb (0.3.8):
     - nanopb/decode (= 0.3.8)
     - nanopb/encode (= 0.3.8)
@@ -38,6 +41,14 @@ PODS:
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
+  - lottie-ios (from `../node_modules/lottie-ios`)
+  - lottie-react-native (from `../mods/lottie-react-native.podspec`)
+
+EXTERNAL SOURCES:
+  lottie-ios:
+    :path: ../node_modules/lottie-ios
+  lottie-react-native:
+    :path: ../mods/lottie-react-native.podspec
 
 SPEC CHECKSUMS:
   Firebase: c98c8b1fbcbdccd82539a36c2b17a9b1bb0ee798
@@ -47,8 +58,10 @@ SPEC CHECKSUMS:
   FirebaseInstanceID: d2058a35e9bebda1b6dd42486b84917bde552a9d
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   GTMSessionFetcher: 390ea358e5a0d0133153806f744662dad933d06b
+  lottie-ios: 9f24be3ecb13412223b6ac70d97437742b0e3de1
+  lottie-react-native: 3a8d394c28bb13a33d71bd81534e44975ca41b30
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
 
-PODFILE CHECKSUM: 7b2f2ada018a8bca977f9787cd35535c7332dfda
+PODFILE CHECKSUM: c720699f902bfea7e2ea20d219f116368509a88f
 
 COCOAPODS: 1.4.0

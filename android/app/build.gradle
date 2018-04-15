@@ -94,8 +94,8 @@ def enableSeparateBuildPerCPUArchitecture = false
 def enableProguardInReleaseBuilds = false
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.1"
+    compileSdkVersion 27
+    buildToolsVersion "27.0.1"
 
     defaultConfig {
         applicationId "com.reactnativeauthapp"
@@ -137,9 +137,16 @@ android {
 }
 
 dependencies {
+    compile project(':lottie-react-native')
     compile(project(':react-native-firebase')) {
         transitive = false
     }
+
+    // Firebase dependencies
+    compile "com.google.android.gms:play-services-base:12.0.1"
+    compile "com.google.firebase:firebase-core:12.0.1"
+    compile "com.google.firebase:firebase-auth:12.0.1"
+
     compile project(':react-native-splash-screen')
     compile project(':react-native-sensitive-info')
     compile project(':react-native-vector-icons')
@@ -154,3 +161,5 @@ task copyDownloadableDepsToLibs(type: Copy) {
     from configurations.compile
     into 'libs'
 }
+
+apply plugin: 'com.google.gms.google-services'
