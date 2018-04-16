@@ -15,7 +15,6 @@
 		00E356F31AD99517003FC87E /* ReactNativeAuthAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ReactNativeAuthAppTests.m */; };
 		0225ACD1968944E2B11FE925 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DFC7BB1241F24F4BA9454E95 /* Feather.ttf */; };
 		03CB3DC3C0BA488A87DCE68C /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91A63914F49840338E808EDB /* Ionicons.ttf */; };
-		0B37F979C74F7D95DA2E4856 /* libPods-ReactNativeAuthAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD266AB076F4B0CC6433756D /* libPods-ReactNativeAuthAppTests.a */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
 		139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
@@ -38,6 +37,7 @@
 		2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E991DF850E9000B6D8A /* libRCTWebSocket-tvOS.a */; };
 		2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* ReactNativeAuthAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ReactNativeAuthAppTests.m */; };
+		36D6F8D064E97A1EBDA8C96E /* libPods-ReactNativeAuthAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 753EDFBF4B4B1B8FFF16A743 /* libPods-ReactNativeAuthAppTests.a */; };
 		41DF0E83A64F4A23BF7965F9 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B728AF952DEE495B9A3BF842 /* Zocial.ttf */; };
 		5C0B1230184C444B9D39DD23 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49794CE830494D3291183ED7 /* Entypo.ttf */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
@@ -50,7 +50,7 @@
 		ACB8761FCF90437E9E0F5588 /* libSplashScreen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09A849D600734E9F97602A10 /* libSplashScreen.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		BFC47B020CDD43B1AC092533 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD8A7B3D9F4B4F8CB5589778 /* FontAwesome.ttf */; };
-		C787C20F1F7301B0DADE5D82 /* libPods-ReactNativeAuthApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D83099291814A6325EECA738 /* libPods-ReactNativeAuthApp.a */; };
+		C5F71D0C105DB11F2862514C /* libPods-ReactNativeAuthApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7A435DDB86CB8EA42C88608 /* libPods-ReactNativeAuthApp.a */; };
 		CE4C1AA70EDD4C78A04BA137 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B28E53DEB8DC43139B138848 /* libRNVectorIcons.a */; };
 		DD21817B365A4BF89E6B9B30 /* libRNFirebase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E643D43C964E4FB19CE314F7 /* libRNFirebase.a */; };
 		E441129584644EBC97D7EAEB /* libRNSensitiveInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E4D0D729D944A0B93DD1E04 /* libRNSensitiveInfo.a */; };
@@ -382,6 +382,7 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ReactNativeAuthApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ReactNativeAuthApp/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
+		15A634DFCC207D6E23E73514 /* Pods-ReactNativeAuthAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeAuthAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactNativeAuthAppTests/Pods-ReactNativeAuthAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		180D81FCD7ED49EE898A35AB /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		23A29D5834B043ED9BD7B5D3 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* ReactNativeAuthApp-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReactNativeAuthApp-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -390,12 +391,15 @@
 		3C6C25284147460595E3BE20 /* RNFirebase.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNFirebase.xcodeproj; path = "../node_modules/react-native-firebase/ios/RNFirebase.xcodeproj"; sourceTree = "<group>"; };
 		49794CE830494D3291183ED7 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		4A87DA8BF3CA479680D46E11 /* SplashScreen.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = SplashScreen.xcodeproj; path = "../node_modules/react-native-splash-screen/ios/SplashScreen.xcodeproj"; sourceTree = "<group>"; };
+		4C384F1D7377FED4B9758E7F /* Pods-ReactNativeAuthApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeAuthApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactNativeAuthApp/Pods-ReactNativeAuthApp.release.xcconfig"; sourceTree = "<group>"; };
+		4DE6661ADCB4539EA96A39D1 /* Pods-ReactNativeAuthAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeAuthAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactNativeAuthAppTests/Pods-ReactNativeAuthAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		510A7EE1310396CE7BB9612E /* Pods-ReactNativeAuthApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeAuthApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactNativeAuthApp/Pods-ReactNativeAuthApp.debug.xcconfig"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		605BB4DA20767D7200927B13 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		60CD97852082E49300DBE5D8 /* liblottie-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "liblottie-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		753EDFBF4B4B1B8FFF16A743 /* libPods-ReactNativeAuthAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeAuthAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
-		865DF14E6F554F598811BD74 /* Pods-ReactNativeAuthApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeAuthApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactNativeAuthApp/Pods-ReactNativeAuthApp.debug.xcconfig"; sourceTree = "<group>"; };
 		8E4D0D729D944A0B93DD1E04 /* libRNSensitiveInfo.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNSensitiveInfo.a; sourceTree = "<group>"; };
 		91A63914F49840338E808EDB /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		9AB72FA5FA19418B896B7BC1 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
@@ -404,16 +408,12 @@
 		B28E53DEB8DC43139B138848 /* libRNVectorIcons.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNVectorIcons.a; sourceTree = "<group>"; };
 		B728AF952DEE495B9A3BF842 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		BD8A7B3D9F4B4F8CB5589778 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
-		BFC5F1B1536CD964E742070F /* Pods-ReactNativeAuthApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeAuthApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactNativeAuthApp/Pods-ReactNativeAuthApp.release.xcconfig"; sourceTree = "<group>"; };
 		C209C69453A840BC9A826104 /* RNSensitiveInfo.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNSensitiveInfo.xcodeproj; path = "../node_modules/react-native-sensitive-info/ios/RNSensitiveInfo.xcodeproj"; sourceTree = "<group>"; };
-		CD266AB076F4B0CC6433756D /* libPods-ReactNativeAuthAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeAuthAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE816F2F7EF44249B619351E /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		D104CF5BEEE1471F94B7D24A /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
-		D83099291814A6325EECA738 /* libPods-ReactNativeAuthApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeAuthApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7A435DDB86CB8EA42C88608 /* libPods-ReactNativeAuthApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeAuthApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFC7BB1241F24F4BA9454E95 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
 		E643D43C964E4FB19CE314F7 /* libRNFirebase.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNFirebase.a; sourceTree = "<group>"; };
-		F14121CEC6BB47161790472B /* Pods-ReactNativeAuthAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeAuthAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactNativeAuthAppTests/Pods-ReactNativeAuthAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		FB9963CBD3FD6E9C2241FA69 /* Pods-ReactNativeAuthAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeAuthAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactNativeAuthAppTests/Pods-ReactNativeAuthAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		FF27CBCB84A44DD7981AA032 /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -423,7 +423,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */,
-				0B37F979C74F7D95DA2E4856 /* libPods-ReactNativeAuthAppTests.a in Frameworks */,
+				36D6F8D064E97A1EBDA8C96E /* libPods-ReactNativeAuthAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,7 +448,7 @@
 				E441129584644EBC97D7EAEB /* libRNSensitiveInfo.a in Frameworks */,
 				ACB8761FCF90437E9E0F5588 /* libSplashScreen.a in Frameworks */,
 				DD21817B365A4BF89E6B9B30 /* libRNFirebase.a in Frameworks */,
-				C787C20F1F7301B0DADE5D82 /* libPods-ReactNativeAuthApp.a in Frameworks */,
+				C5F71D0C105DB11F2862514C /* libPods-ReactNativeAuthApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,10 +599,21 @@
 			children = (
 				60CD97852082E49300DBE5D8 /* liblottie-ios.a */,
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
-				D83099291814A6325EECA738 /* libPods-ReactNativeAuthApp.a */,
-				CD266AB076F4B0CC6433756D /* libPods-ReactNativeAuthAppTests.a */,
+				D7A435DDB86CB8EA42C88608 /* libPods-ReactNativeAuthApp.a */,
+				753EDFBF4B4B1B8FFF16A743 /* libPods-ReactNativeAuthAppTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		38B78C4BA704772A5667C50B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				510A7EE1310396CE7BB9612E /* Pods-ReactNativeAuthApp.debug.xcconfig */,
+				4C384F1D7377FED4B9758E7F /* Pods-ReactNativeAuthApp.release.xcconfig */,
+				15A634DFCC207D6E23E73514 /* Pods-ReactNativeAuthAppTests.debug.xcconfig */,
+				4DE6661ADCB4539EA96A39D1 /* Pods-ReactNativeAuthAppTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		5E91572E1DD0AC6500FF2AA8 /* Products */ = {
@@ -708,7 +719,7 @@
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				F9F4DBA6FDC3406C8B1E5477 /* Resources */,
 				60D2A2BD206D91C8006E905E /* Recovered References */,
-				BA2EA802341B303C44AE0863 /* Pods */,
+				38B78C4BA704772A5667C50B /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -733,17 +744,6 @@
 				2D16E6721FA4F8DC00B85C8A /* libRCTBlob-tvOS.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		BA2EA802341B303C44AE0863 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				865DF14E6F554F598811BD74 /* Pods-ReactNativeAuthApp.debug.xcconfig */,
-				BFC5F1B1536CD964E742070F /* Pods-ReactNativeAuthApp.release.xcconfig */,
-				F14121CEC6BB47161790472B /* Pods-ReactNativeAuthAppTests.debug.xcconfig */,
-				FB9963CBD3FD6E9C2241FA69 /* Pods-ReactNativeAuthAppTests.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		F9F4DBA6FDC3406C8B1E5477 /* Resources */ = {
@@ -771,12 +771,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ReactNativeAuthAppTests" */;
 			buildPhases = (
-				64700DAB9714C736827BC6AE /* [CP] Check Pods Manifest.lock */,
+				D1440AE571345FB5D64CFF91 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				80580E3F55DD2ED90EE02D47 /* [CP] Embed Pods Frameworks */,
-				51EC5BF00BB7B064E0330068 /* [CP] Copy Pods Resources */,
+				04AE366BACC815B183782C9B /* [CP] Embed Pods Frameworks */,
+				4736C8A7DE1007989D205982 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -792,13 +792,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ReactNativeAuthApp" */;
 			buildPhases = (
-				F44FAD97D237A995DDE42A3B /* [CP] Check Pods Manifest.lock */,
+				F0D2A6348248A8473BAA274C /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				847EE109E046C60A84F08760 /* [CP] Embed Pods Frameworks */,
-				914AF7639AC52B9A07C256B0 /* [CP] Copy Pods Resources */,
+				3CA10D1250BA87254A45959C /* [CP] Embed Pods Frameworks */,
+				F1A455299AD9BE738A3DD36D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1307,6 +1307,21 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
+		04AE366BACC815B183782C9B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactNativeAuthAppTests/Pods-ReactNativeAuthAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1321,7 +1336,22 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		51EC5BF00BB7B064E0330068 /* [CP] Copy Pods Resources */ = {
+		3CA10D1250BA87254A45959C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactNativeAuthApp/Pods-ReactNativeAuthApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4736C8A7DE1007989D205982 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1336,7 +1366,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactNativeAuthAppTests/Pods-ReactNativeAuthAppTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		64700DAB9714C736827BC6AE /* [CP] Check Pods Manifest.lock */ = {
+		D1440AE571345FB5D64CFF91 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1354,52 +1384,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		80580E3F55DD2ED90EE02D47 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactNativeAuthAppTests/Pods-ReactNativeAuthAppTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		847EE109E046C60A84F08760 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactNativeAuthApp/Pods-ReactNativeAuthApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		914AF7639AC52B9A07C256B0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactNativeAuthApp/Pods-ReactNativeAuthApp-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F44FAD97D237A995DDE42A3B /* [CP] Check Pods Manifest.lock */ = {
+		F0D2A6348248A8473BAA274C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1415,6 +1400,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1A455299AD9BE738A3DD36D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactNativeAuthApp/Pods-ReactNativeAuthApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1484,7 +1484,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F14121CEC6BB47161790472B /* Pods-ReactNativeAuthAppTests.debug.xcconfig */;
+			baseConfigurationReference = 15A634DFCC207D6E23E73514 /* Pods-ReactNativeAuthAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1519,7 +1519,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB9963CBD3FD6E9C2241FA69 /* Pods-ReactNativeAuthAppTests.release.xcconfig */;
+			baseConfigurationReference = 4DE6661ADCB4539EA96A39D1 /* Pods-ReactNativeAuthAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -1551,7 +1551,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 865DF14E6F554F598811BD74 /* Pods-ReactNativeAuthApp.debug.xcconfig */;
+			baseConfigurationReference = 510A7EE1310396CE7BB9612E /* Pods-ReactNativeAuthApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1578,7 +1578,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFC5F1B1536CD964E742070F /* Pods-ReactNativeAuthApp.release.xcconfig */;
+			baseConfigurationReference = 4C384F1D7377FED4B9758E7F /* Pods-ReactNativeAuthApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
