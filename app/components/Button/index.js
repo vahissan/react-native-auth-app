@@ -18,7 +18,7 @@ export default class ButtonComponent extends PureComponent {
         backgroundColor={Theme.colors.primaryColor}
         raised={true}
       />
-    )
+    );
   }
 }
 

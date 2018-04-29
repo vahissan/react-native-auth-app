@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 
-export default StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     borderRadius: 2
   },
@@ -8,3 +8,5 @@ export default StyleSheet.create({
     borderRadius: 2
   }
 });
+
+export default styles;
