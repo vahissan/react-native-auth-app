@@ -8,6 +8,8 @@ target 'ReactNativeAuthApp' do
   # use_frameworks!
 
   # Pods for ReactNativeAuthApp
+  pod 'SentryReactNative', :path => '../node_modules/react-native-sentry'
+
   target 'ReactNativeAuthAppTests' do
     inherit! :search_paths
     # Pods for testing

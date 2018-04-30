@@ -1,4 +1,5 @@
 import './app/config/Reactotron';
+import './app/config/Sentry';
 
 import { AppRegistry, YellowBox } from 'react-native';
 import App from './app/App';

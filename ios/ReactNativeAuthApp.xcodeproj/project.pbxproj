@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -55,6 +54,7 @@
 		DD21817B365A4BF89E6B9B30 /* libRNFirebase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E643D43C964E4FB19CE314F7 /* libRNFirebase.a */; };
 		E441129584644EBC97D7EAEB /* libRNSensitiveInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E4D0D729D944A0B93DD1E04 /* libRNSensitiveInfo.a */; };
 		F997A0D1298A47FD8E174BA3 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 180D81FCD7ED49EE898A35AB /* SimpleLineIcons.ttf */; };
+		8E7D6370BDAD40E4BC0F98CA /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E9BECFD832924C638E342CE4 /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -414,6 +414,7 @@
 		DFC7BB1241F24F4BA9454E95 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
 		E643D43C964E4FB19CE314F7 /* libRNFirebase.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNFirebase.a; sourceTree = "<group>"; };
 		FF27CBCB84A44DD7981AA032 /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
+		E9BECFD832924C638E342CE4 /* libz.tbd */ = {isa = PBXFileReference; name = "libz.tbd"; path = "usr/lib/libz.tbd"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = sourcecode.text-based-dylib-definition; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -448,6 +449,7 @@
 				ACB8761FCF90437E9E0F5588 /* libSplashScreen.a in Frameworks */,
 				DD21817B365A4BF89E6B9B30 /* libRNFirebase.a in Frameworks */,
 				C5F71D0C105DB11F2862514C /* libPods-ReactNativeAuthApp.a in Frameworks */,
+				8E7D6370BDAD40E4BC0F98CA /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,6 +601,7 @@
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
 				D7A435DDB86CB8EA42C88608 /* libPods-ReactNativeAuthApp.a */,
 				753EDFBF4B4B1B8FFF16A743 /* libPods-ReactNativeAuthAppTests.a */,
+				E9BECFD832924C638E342CE4 /* libz.tbd */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -762,6 +765,14 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		89B99EC332EB456CB0559282 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			path = Application;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -797,6 +808,7 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				3CA10D1250BA87254A45959C /* [CP] Embed Pods Frameworks */,
 				F1A455299AD9BE738A3DD36D /* [CP] Copy Pods Resources */,
+				1F5690AE61214DB8BFB2521F /* Upload Debug Symbols to Sentry */,
 			);
 			buildRules = (
 			);
@@ -1303,7 +1315,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export SENTRY_PROPERTIES=sentry.properties\nexport NODE_BINARY=node\n../node_modules/@sentry/cli/bin/sentry-cli react-native xcode ../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
 		04AE366BACC815B183782C9B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1332,7 +1344,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export SENTRY_PROPERTIES=sentry.properties\nexport NODE_BINARY=node\n../node_modules/@sentry/cli/bin/sentry-cli react-native xcode ../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
 		3CA10D1250BA87254A45959C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1414,6 +1426,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactNativeAuthApp/Pods-ReactNativeAuthApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		1F5690AE61214DB8BFB2521F /* Upload Debug Symbols to Sentry */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			name = "Upload Debug Symbols to Sentry";
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			shellPath = /bin/sh;
+			shellScript = "export SENTRY_PROPERTIES=sentry.properties\n../node_modules/@sentry/cli/bin/sentry-cli upload-dsym";
 		};
 /* End PBXShellScriptBuildPhase section */
 
